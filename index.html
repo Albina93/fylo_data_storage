@@ -20,36 +20,41 @@
   </head>
   <body class="d-flex justify-content-center align-items-center vh-100">
     <div class="container">
-      <div class="row justify-content-md-center g-3">
-        <div class="col-12 col-lg-4">
+      <div class="row justify-content-md-center g-4">
+        <div class="col-12 col-lg-3">
           <div
             class="p-3 rounded-2 rounded-end-circle rounded-bottom-2"
             style="background-color: hsl(228, 56%, 26%)"
           >
-            <img src="./images/logo.svg" alt="" />
-            <div class="d-flex justify-content-start gap-4 py-3">
-              <div class="p-2">
+            <img
+              class="my-3"
+              src="./images/logo.svg"
+              alt=""
+              style="width: 120px"
+            />
+            <div class="d-flex justify-content-start gap-3 py-3">
+              <div class="img_cont p-2 rounded-2">
                 <img src="./images/icon-document.svg" alt="" />
               </div>
-              <div class="p-2">
+              <div class="img_cont p-2 rounded-2">
                 <img src="./images/icon-folder.svg" alt="" />
               </div>
-              <div class="p-2">
+              <div class="img_cont p-2 rounded-2">
                 <img src="./images/icon-upload.svg" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-5">
           <div
             class="p-3 rounded position-relative mt-3"
             style="background-color: hsl(228, 56%, 26%)"
           >
-            <p class="text-white">
+            <p class="text-center text-lg-start p-2">
               You’ve used <strong>815 GB</strong> of your storage
             </p>
             <div
-              class="progress rounded-4 position-relative"
+              class="progress rounded-4 position-relative mt-3"
               style="height: 20px"
             >
               <div
@@ -64,7 +69,7 @@
                   class="rounded-circle bg-white"
                   style="
                     position: absolute;
-                    left: 72%;
+                    left: 71%;
                     width: 12px;
                     height: 12px;
                   "
@@ -72,12 +77,12 @@
               </div>
             </div>
             <div
-              class="badge bg-white text-dark position-absolute"
+              class="badge bg-white text-dark pt-2 position-absolute"
               style="left: 75%; top: -10px; height: 30px"
             >
-              185 GB LEFT
+              <strong>185</strong> GB LEFT
             </div>
-            <div class="d-flex justify-content-between text-white mt-3 mb-4">
+            <div class="d-flex justify-content-between mt-3 mb-3">
               <span>0 GB</span>
               <span>1000 GB</span>
             </div>
@@ -85,6 +90,6 @@
         </div>
       </div>
     </div>
-    <!--  185 GB Left  -->
+    <div class="bottom_img"><img src="./images/bg-desktop.png" alt="" /></div>
   </body>
 </html>
