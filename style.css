@@ -20,12 +20,3 @@ body {
 .img_cont {
   background-color: hsl(229, 57%, 11%);
 }
-
-@media (max-width: 768px) {
-  .badge_gb {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
