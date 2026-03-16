@@ -19,6 +19,14 @@
     <title>Fylo data storage component</title>
   </head>
   <body class="d-flex justify-content-center align-items-center vh-100">
+    <picture class="position-absolute bottom-0 start-0 z-n1">
+      <source media="(max-width:575.98px)" srcset="./images/bg-mobile.png" />
+      <img
+        src="./images/bg-desktop.png"
+        class="img-fluid"
+        alt="Image of background"
+      />
+    </picture>
     <div class="container">
       <div class="row justify-content-md-center g-4">
         <div class="col-12 col-lg-3">
@@ -48,7 +56,7 @@
         <div class="col-12 col-lg-5">
           <div
             class="p-3 rounded position-relative mt-3"
-            style="background-color: hsl(228, 56%, 26%)"
+            style="background-color: hsl(228, 56%, 26%); min-height: 150px"
           >
             <p class="text-center text-lg-start p-2">
               You’ve used <strong>815 GB</strong> of your storage
@@ -69,20 +77,31 @@
                   class="rounded-circle bg-white"
                   style="
                     position: absolute;
-                    left: 71%;
-                    width: 12px;
-                    height: 12px;
+                    left: 72%;
+                    width: 11px;
+                    height: 11px;
                   "
                 ></div>
               </div>
             </div>
             <div
-              class="badge bg-white text-dark pt-2 position-absolute"
-              style="left: 75%; top: -10px; height: 30px"
+              class="badge bg-white text-dark pt-2 position-absolute d-none d-md-block"
+              style="height: 30px; top: -15px; right: 25px"
             >
               <strong>185</strong> GB LEFT
             </div>
-            <div class="d-flex justify-content-between mt-3 mb-3">
+            <div
+              class="badge bg-white text-dark pt-2 position-absolute d-block d-md-none"
+              style="
+                height: 30px;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+              "
+            >
+              <strong>185</strong> GB LEFT
+            </div>
+            <div class="d-flex justify-content-between mt-2 mb-4">
               <span>0 GB</span>
               <span>1000 GB</span>
             </div>
@@ -90,6 +109,5 @@
         </div>
       </div>
     </div>
-    <div class="bottom_img"><img src="./images/bg-desktop.png" alt="" /></div>
   </body>
 </html>

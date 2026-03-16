@@ -5,20 +5,8 @@ body {
   font-size: 14px;
   background-color: hsl(229, 57%, 11%);
   color: hsl(243, 100%, 93%);
-  position: relative;
 }
-.bottom_img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
-  background-image: url(./images/bg-desktop.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
+
 .progress-bar {
   background-image: linear-gradient(
     to right,
@@ -31,4 +19,13 @@ body {
 }
 .img_cont {
   background-color: hsl(229, 57%, 11%);
+}
+
+@media (max-width: 768px) {
+  .badge_gb {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
